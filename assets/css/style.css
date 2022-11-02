@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,24 @@
 }
 
 header {
-    background: white;
+    background: #8b8b00;
 }
 
 header > h1 {
-    color: black;
+    color: white;
+    text-align: center;
+    font-family: cairo, sans-serif;
+}
+
+.leaderboard {
+    border: 3px solid white;
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+    font-size: 46px;
+    text-align: center;
+}
+
+body {
+    background-color: #00468b;
 }
