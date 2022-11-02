@@ -8,7 +8,12 @@ const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
 
+function game(userCohice) {
+console.log(":poop" + userCohice);
+}
 
+  
+function main() { 
 rock.addEventListener('click', function () {
     game("r");
 })
@@ -20,3 +25,6 @@ paper.addEventListener('click', function () {
 scissor.addEventListener('click', function () {
     game("s");
 })
+}
+
+main ();
