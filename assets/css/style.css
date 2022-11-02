@@ -23,7 +23,31 @@ header > h1 {
     color: white;
     font-size: 46px;
     text-align: center;
+    padding: 15px 20px;
+    font-family: cairo, sans-serif;
+    position: relative;
 }
+
+.player {
+    background-color: #468b00;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: cairo, sans-serif;
+}
+
+#user-mark {
+    position: absolute;
+    top: 30px;
+    right: 175px;
+}
+
+#bot-mark {
+    position: absolute;
+    top: 30px;
+    left: 175px;
+}
+
+
 
 body {
     background-color: #00468b;
