@@ -8,11 +8,16 @@ const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
 
+function getBotChoice () {
+    const choices = ['r', 'p', 's'];
+    const randomNumber = Math.floor(Math.random()*3);
+    return choices [randomNumber];
+}
+ 
 function game(userCohice) {
-console.log(":poop" + userCohice);
+
 }
 
-  
 function main() { 
 rock.addEventListener('click', function () {
     game("r");
