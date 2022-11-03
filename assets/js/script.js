@@ -7,6 +7,8 @@ const score = document.getElementsByClassName(".score");
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
+let result
+
 
 function getBotChoice () {
     const choices = ['r', 'p', 's'];
@@ -14,9 +16,31 @@ function getBotChoice () {
     return choices [randomNumber];
 }
  
-function game(userCohice) {
-
+function game(userChoice) {
+const BotChoice = getBotChoice();
+if (BotChoice === userChoice) {
+    result = "It's A Draw!"
 }
+if (BotChoice === "r" && userChoice === 'p'){
+    console.log ("You Win!")
+}
+if (BotChoice === "s" && userChoice === 'r'){
+    console.log ("You Win!")
+}
+if (BotChoice === "p" && userChoice === 's'){
+    console.log ("You Win!")
+}
+if (BotChoice === "r" && userChoice === 's'){
+    console.log ("You Lost!")
+}
+if (BotChoice === "p" && userChoice === 'r'){
+    console.log ("You Lost!")
+}
+if (BotChoice === "s" && userChoice === 'p'){
+    console.log ("You Lost!")
+}
+}
+
 
 function main() { 
 rock.addEventListener('click', function () {
