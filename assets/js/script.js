@@ -1,7 +1,7 @@
-const userScore = 0;
-const botScore = 0;
-const userScoreDiv = document.getElementById("user-point");
-const botScoreDiv = document.getElementById("bot-point");
+let userScore = 0;
+let botScore = 0;
+const userPoint = document.getElementById("user-point");
+const botPoint = document.getElementById("bot-point");
 const leaderboard = document.getElementsByClassName(".leaderboard");
 const score = document.getElementsByClassName(".score");
 const rock = document.getElementById("rock");
@@ -16,28 +16,41 @@ function getBotChoice () {
     return choices [randomNumber];
 }
  
+function win () {
+    userScore++;
+    userPoint.innerHTML = userScore;
+    botPoint.innerHTML = botScore;
+}
+function lose () {
+    console.log ("You Lose!")
+}
+function draw () {
+    console.log ("Its A Draw!")
+}
+
+
 function game(userChoice) {
 const BotChoice = getBotChoice();
 if (BotChoice === userChoice) {
-    result = "It's A Draw!"
+    draw();
 }
 if (BotChoice === "r" && userChoice === 'p'){
-    console.log ("You Win!")
+     win();
 }
 if (BotChoice === "s" && userChoice === 'r'){
-    console.log ("You Win!")
+     win();
 }
 if (BotChoice === "p" && userChoice === 's'){
-    console.log ("You Win!")
+     win();
 }
 if (BotChoice === "r" && userChoice === 's'){
-    console.log ("You Lost!")
+     lose();
 }
 if (BotChoice === "p" && userChoice === 'r'){
-    console.log ("You Lost!")
+     lose();
 }
 if (BotChoice === "s" && userChoice === 'p'){
-    console.log ("You Lost!")
+     lose();
 }
 }
 
