@@ -3,23 +3,25 @@ let botScore = 0;
 const userPoint = document.getElementById("user-point");
 const botPoint = document.getElementById("bot-point");
 const leaderboard = document.getElementsByClassName(".leaderboard");
-const score = document.getElementsByClassName(".score");
+const score = document.getElementsByClassName(".score > p");
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
-let result
 
 
-function getBotChoice () {
+
+function getbotChoice () {
     const choices = ['r', 'p', 's'];
     const randomNumber = Math.floor(Math.random()*3);
     return choices [randomNumber];
 }
  
-function win () {
+function win(userChoice, botChoice) {
     userScore++;
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
+    score.innerHTML = userChoice + "Beats" + botChoice + 'You win!🔥';
+    
 }
 function lose () {
     console.log ("You Lose!")
@@ -30,27 +32,27 @@ function draw () {
 
 
 function game(userChoice) {
-const BotChoice = getBotChoice();
-if (BotChoice === userChoice) {
+const botChoice = getbotChoice();
+if (botChoice === userChoice) {
     draw();
 }
-if (BotChoice === "r" && userChoice === 'p'){
-     win();
+if (botChoice === "r" && userChoice === 'p'){
+     win(userChoice, botChoice);
 }
-if (BotChoice === "s" && userChoice === 'r'){
-     win();
+if (botChoice === "s" && userChoice === 'r'){
+     win(userChoice, botChoice);
 }
-if (BotChoice === "p" && userChoice === 's'){
-     win();
+if (botChoice === "p" && userChoice === 's'){
+     win(userChoice, botChoice);
 }
-if (BotChoice === "r" && userChoice === 's'){
-     lose();
+if (botChoice === "r" && userChoice === 's'){
+     lose(userChoice, botChoice);
 }
-if (BotChoice === "p" && userChoice === 'r'){
-     lose();
+if (botChoice === "p" && userChoice === 'r'){
+     lose(userChoice, botChoice);
 }
-if (BotChoice === "s" && userChoice === 'p'){
-     lose();
+if (botChoice === "s" && userChoice === 'p'){
+     lose(userChoice, botChoice);
 }
 }
 
