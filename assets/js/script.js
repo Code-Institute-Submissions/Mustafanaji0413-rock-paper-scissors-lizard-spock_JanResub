@@ -16,24 +16,36 @@ function getbotChoice () {
     return choices [randomNumber];
 }
 
+function makeWord (letter) {
+    if (letter === "r") return "Rock";
+    if (letter === "s") return "Scissor";
+    if (letter === "p") return "Paper";
+}
+
+
 function win(userChoice, botChoice) {
     userScore++;
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
-    myScore.innerHTML = `<p> ${userChoice} Beats ${botChoice} You win!🔥</p>`
+    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Beats ${makeWord (botChoice)} You win!🔥</p>`
 
+} 
+function lose (userChoice, botChoice) {
+    botScore++;
+    userPoint.innerHTML = userScore;
+    botPoint.innerHTML = botScore;
+    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Loses To ${makeWord (botChoice)} You Lost... </p>`
 }
-function lose () {
-    
-}
-function draw () {
-    
+function draw (userChoice, botChoice) {
+    userPoint.innerHTML = userScore;
+    botPoint.innerHTML = botScore;
+    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Equals ${makeWord (botChoice)} It's A Draw.</p>`
 }
 
 function game(userChoice) {
 const botChoice = getbotChoice();
 if (botChoice === userChoice) {
-    draw(); 
+    draw(userChoice, botChoice); 
 }
 if (botChoice === "r" && userChoice === 'p'){
      win(userChoice, botChoice);
