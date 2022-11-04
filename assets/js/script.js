@@ -25,19 +25,19 @@ function win(userChoice, botChoice) {
     userScore++;
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
-    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Beats ${makeWord (botChoice)} You win!🔥</p>`;
+    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Beats ${makeWord (botChoice)}. You win!🔥</p>`;
 
 } 
 function lose (userChoice, botChoice) {
     botScore++;
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
-    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Loses To ${makeWord (botChoice)} You Lost...😭 </p>`;
+    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Loses To ${makeWord (botChoice)}. You Lost...😭 </p>`;
 }
 function draw (userChoice, botChoice) {
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
-    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Equals ${makeWord (botChoice)} It's A Draw.😐</p>`;
+    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Equals ${makeWord (botChoice)}. It's A Draw.😐</p>`;
 }
 
 function game(userChoice) {
