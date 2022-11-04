@@ -3,11 +3,11 @@ let botScore = 0;
 const userPoint = document.getElementById("user-point");
 const botPoint = document.getElementById("bot-point");
 const leaderboard = document.getElementsByClassName(".leaderboard");
-const score = document.getElementsByClassName(".score > p");
+const score = document.getElementsByClassName("score");
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
-
+const myScore = document.getElementById("my-score") 
 
 
 function getbotChoice () {
@@ -15,26 +15,25 @@ function getbotChoice () {
     const randomNumber = Math.floor(Math.random()*3);
     return choices [randomNumber];
 }
- 
+
 function win(userChoice, botChoice) {
     userScore++;
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
-    score.innerHTML = userChoice + "Beats" + botChoice + 'You win!🔥';
-    
+    myScore.innerHTML = `<p> ${userChoice} Beats ${botChoice} You win!🔥</p>`
+
 }
 function lose () {
-    console.log ("You Lose!")
+    
 }
 function draw () {
-    console.log ("Its A Draw!")
+    
 }
-
 
 function game(userChoice) {
 const botChoice = getbotChoice();
 if (botChoice === userChoice) {
-    draw();
+    draw(); 
 }
 if (botChoice === "r" && userChoice === 'p'){
      win(userChoice, botChoice);
