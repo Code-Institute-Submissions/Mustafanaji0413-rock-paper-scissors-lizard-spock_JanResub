@@ -2,12 +2,10 @@ let userScore = 0;
 let botScore = 0;
 const userPoint = document.getElementById("user-point");
 const botPoint = document.getElementById("bot-point");
-const leaderboard = document.getElementsByClassName(".leaderboard");
-const score = document.getElementsByClassName("score");
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
-const myScore = document.getElementById("my-score") 
+const myScore = document.getElementById("my-score");
 
 
 function getbotChoice () {
@@ -27,19 +25,19 @@ function win(userChoice, botChoice) {
     userScore++;
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
-    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Beats ${makeWord (botChoice)} You win!🔥</p>`
+    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Beats ${makeWord (botChoice)} You win!🔥</p>`;
 
 } 
 function lose (userChoice, botChoice) {
     botScore++;
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
-    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Loses To ${makeWord (botChoice)} You Lost... </p>`
+    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Loses To ${makeWord (botChoice)} You Lost...😭 </p>`;
 }
 function draw (userChoice, botChoice) {
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
-    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Equals ${makeWord (botChoice)} It's A Draw.</p>`
+    myScore.innerHTML = `<p> ${ makeWord(userChoice)} Equals ${makeWord (botChoice)} It's A Draw.😐</p>`;
 }
 
 function game(userChoice) {
@@ -71,15 +69,15 @@ if (botChoice === "s" && userChoice === 'p'){
 function main() { 
 rock.addEventListener('click', function () {
     game("r");
-})
+});
 
 paper.addEventListener('click', function () {
     game("p");
-})
+});
 
 scissor.addEventListener('click', function () {
     game("s");
-})
+});
 }
 
 main ();
