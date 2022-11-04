@@ -4,7 +4,8 @@ The perfect Rock, Paper Scissor Game is a fun and interactive game, its perfect 
 
 The user of the game will learn how the game works, the rules and how to explain it to others! The perfect Rock, Paper Scissor Game is targeted to children and adults!
 
-<img width="800" alt="readme-life-hacks" src="https://user-images.githubusercontent.com/115544231/197305674-3feb1f78-8456-4b54-95be-360fe80f74cf.png">
+<img width="800" alt="Screenshot 2022-11-04 at 19 00 39" src="https://user-images.githubusercontent.com/115544231/200068450-e89c9ec2-d544-41a9-9e7d-35b73807bec5.png">
+
 
 ## Features
 
@@ -13,7 +14,7 @@ The user of the game will learn how the game works, the rules and how to explain
 - - On the top of the page we can see the name of the game with a background and font that are playfull and contrasts the rest of the page
 - - The header clearly says what game the user is about to play. 
 
-<img width="800" alt="Screenshot 2022-10-22 at 01 57 53" src="https://user-images.githubusercontent.com/115544231/197306405-a975ba92-8f90-470e-ad91-8943aefa1c49.png">
+<img width="800" alt="Screenshot 2022-11-04 at 21 25 49" src="https://user-images.githubusercontent.com/115544231/200068611-653ba2ac-02fc-4b24-90ef-866bf9e7e325.png">
 
  - The Game Options
 
@@ -21,95 +22,62 @@ The user of the game will learn how the game works, the rules and how to explain
 - - The user can see clear instructions on the moves he/she can make in form of three diffrent pictures showing rock, paper and scissor. 
 - - The user can simply press on one of the images to make their move. 
 
-<img width="800" alt="Screenshot 2022-10-22 at 01 58 52" src="https://user-images.githubusercontent.com/115544231/197306450-bcc763df-6d0d-4d16-b248-8fafa36ed010.png">
+<img width="800" alt="Screenshot 2022-11-04 at 21 26 11" src="https://user-images.githubusercontent.com/115544231/200068677-93ed0a2b-8db5-4254-b42a-79859e1b1dcd.png">
+
 
 - The Game Results
 
 - - When the user decides what move to make, their choice displays as the first word.
 - - The computer uses the java code to chose a random option. The option the bot choose it then displayed as the third word. 
 - - When both the user and the computer has made their move, the score is updated and the winner is prsented in the form of text!
-- - The winner and score are clear for the user to see which makes he game easy to understan and play.
+- - The winner and score are clear for the user to see which makes he game easy to understand and play.
 
-<img width="800" alt="Screenshot 2022-10-22 at 01 55 53" src="https://user-images.githubusercontent.com/115544231/197306301-f4e8a677-143b-4357-a0d7-276fccfeb758.png">
+<img width="1440" alt="Screenshot 2022-11-04 at 21 31 30" src="https://user-images.githubusercontent.com/115544231/200068808-3f444192-5a67-4f67-9a30-b9f11ca9812e.png">
 
-### The Hacks Section
+- The Footer
+- - The footer shows the rules of the game. 
+- - The Footer is very helpfull to the user that has never played the game before or have forgotten the rules. 
 
-- The hacks section provides the user with the websites entire life hacks tips.
+<img width="1438" alt="Screenshot 2022-11-04 at 21 26 32" src="https://user-images.githubusercontent.com/115544231/200068934-4a321140-7178-4b1a-9c58-631d6e71f187.png">
 
-- The hacks are divided into three hack images per row (on a desktop) to keep things visially pleasing.
-
-- Under each hack image there is a text box explaning how the hack works. 
-
-- Every time the page moves on to a diffrent hacks catagory the page displays a healine showing the catagory of the upcomning hacks. 
-
-<img width="800" alt="Screenshot 2022-10-22 at 01 53 25" src="https://user-images.githubusercontent.com/115544231/197306157-7154a884-cd0b-48ed-a18b-4aade4fdad05.png">
-
-
-### The Footer
-
-- The footer contains social media links to out Facebook, Twitter, Youtube and Instagram.
-
-- The links are shown as icons.
-
-- If the user presses on a link it opens on in a new tab. 
-
-<img width="800" alt="Screenshot 2022-10-22 at 01 59 56" src="https://user-images.githubusercontent.com/115544231/197306497-6e1cb420-8602-4f43-9b24-e6334059363b.png">
+### Features Left To Implement 
+- I would like to the possibility to play to a certain amount of points before the game ends. 
+- I would also like to add the Lizard and Spock options in the future. 
 
 
 ## Testing 
-
 - I have tested that this page works in diffrnet browsers such as Chrome, Safari and Firefox.
 
-- I have cofirmed that thus proejct is responsive, looks goof and functoins on all standard screen sizes using dev tools bar. 
+- I have cofirmed that thus proejct is responsive, looks good and functoins on all standard screen sizes using dev tools bar.
 
-- I have confirmed that the header, navigation, get in touch, hack and home are all readeble and understandeble. 
+- I have confirmed that the header, instructions, options and footer text are all readeble and eay to understand.  
 
-- I have confirmed that the form works and the required fileds need to be filled out for the form to be able to submit. 
+- I have confirmed that the color and fonts are all easy to read and accesible by running them through lighthouse in dev tools. 
 
-
-## Bugs
-
-**Solved Bugs**
-- When I started out with the hacks page I couldnt figure out how to align the diffrent images without them jumping all over the website. I discovered that the "float" tag was ruining it. After getting help from tutor support I learned about "flex" and that helped me solve the issue. 
-
-- Once the desktop alignment was good i had trouble with aligning the page for diffrent devices. Once I fully understood the "flex" attribut it helped me solve it. 
-
-- I had difficulties with the hacks page becouse of the images were diffrent sizings. I solved this by using adobe tool to make them all the same size. 
-
-- I struggled with making the text box on the home page transparrnet. I used the "rgba" to set the color because it can also set the transparency of it.
+<img width="800" alt="Screenshot 2022-11-04 at 21 27 35" src="https://user-images.githubusercontent.com/115544231/200069065-20dfcbe9-4c0e-4637-b4fb-3e887227bf28.png">
 
 
+## Bugs 
+### Solved Bugs
+- I had troubl when trying to display the winner to the website. The issue was that i had forget to define the user and bot. 
+- I had issues defining the winner between the bot and user. The issue was that i had forgot to add two "&&" charachters. 
+- Another issue i ran into was how to display full number instead of decimal numbers. I foun the solution from my "Love Maths" Project
 
-## Validator Testing 
+## Unfixed Bugs
+No unfixed bugs. 
 
- **HTML**
-- No errors were returned when passing through the official W3C validator. 
-
-**CSS**
-- No errors were found when passing through the official Jigsaw validator. 
-
-**Accessibility**
-- I have confirmed that the colors and fonts chosen are easy to read and accessible by running it through the lighthouse in devtools.
-
-<img width="800" alt="Screenshot 2022-10-22 at 02 24 08" src="https://user-images.githubusercontent.com/115544231/197307937-9981b80d-b20e-43d6-a3da-e18079306326.png">
-
-### Unfixed Bugs
-- No unfixed bugs
-
-## Deployment 
+# Deployment
 - The site was deployed on to GitHub Pages. The steps are as follows:
-- In the GitHub repository go to the setting tab
-- Go to the pages tab on the right
-- Navigate to the branches section an press the none drop-down menu
-- Select the "Main" option
-- Press save and a link is giving to me to complete the website. 
-
-The live link can be found here. <a href="https://mustafanaji0413.github.io/life-hack/index.html">Life Hacks</a>
+- - In the GitHub repository go to the setting tab
+- - Go to the pages tab on the right
+- - Navigate to the branches section an press the none drop-down menu
+- - Select the "Main" option
+- - Press save and a link is giving to me to complete the website.
 
 ## Credits
-**Content**
-- The code to make the social media links was taken from the Love Running Project.
-- The code used to to align the images was inspired from tutor support, W3 Schools and Stack Overflow. 
 
-**Media** 
-The image for the header was taken from <a href="https://www.istockphoto.com/photo/life-hacks-text-on-a-display-on-blue-and-pink-bright-background-gm895791500-247456759?phrase=life%20hacks"> IStock</a> <a href="https://www.lifehack.org/articles/lifestyle/100-life-hacks-that-make-life-easier.html">Lifehack.org</a>, <a href="https://chasingabetterlife.com/27-bedroom-organization-hacks-thatll-make-look-like-genius/">Chasing better life</a> and <a href="https://www.eatthis.com/kitchen-hacks-cooking-tips/">Eat this</a>
+### Content 
+- The code to show whole number instead of decimal numbers was taken from the Love Maths project. 
+
+### Media
+- The images for the 3d renderd hands were taken from <link href="https://www.flaticon.com/"> FlatIcon
