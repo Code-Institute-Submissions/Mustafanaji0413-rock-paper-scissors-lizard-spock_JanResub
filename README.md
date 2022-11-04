@@ -73,6 +73,7 @@ No unfixed bugs.
 - - Navigate to the branches section an press the none drop-down menu
 - - Select the "Main" option
 - - Press save and a link is giving to me to complete the website.
+Live link can be found here -  <a href="https://mustafanaji0413.github.io/rock-paper-scissors/">ROCK PAPER SCISSOR</a>
 
 ## Credits
 
@@ -80,4 +81,4 @@ No unfixed bugs.
 - The code to show whole number instead of decimal numbers was taken from the Love Maths project. 
 
 ### Media
-- The images for the 3d renderd hands were taken from <link href="https://www.flaticon.com/"> FlatIcon
+- The images for the 3d renderd hands were taken from <a href="https://www.flaticon.com/">FlatIcon</a>
