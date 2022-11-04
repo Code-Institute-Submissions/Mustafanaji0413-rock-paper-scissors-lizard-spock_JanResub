@@ -41,43 +41,43 @@ function draw (userChoice, botChoice) {
 }
 
 function game(userChoice) {
-const botChoice = getbotChoice();
-if (botChoice === userChoice) {
+    const botChoice = getbotChoice();
+    if (botChoice === userChoice) {
     draw(userChoice, botChoice); 
-}
-if (botChoice === "r" && userChoice === 'p'){
+    }
+    if (botChoice === "r" && userChoice === 'p'){
      win(userChoice, botChoice);
-}
-if (botChoice === "s" && userChoice === 'r'){
+    }
+    if (botChoice === "s" && userChoice === 'r'){
      win(userChoice, botChoice);
-}
-if (botChoice === "p" && userChoice === 's'){
+    }
+    if (botChoice === "p" && userChoice === 's'){
      win(userChoice, botChoice);
-}
-if (botChoice === "r" && userChoice === 's'){
+    }
+    if (botChoice === "r" && userChoice === 's'){
      lose(userChoice, botChoice);
-}
-if (botChoice === "p" && userChoice === 'r'){
+    }
+    if (botChoice === "p" && userChoice === 'r'){
      lose(userChoice, botChoice);
-}
-if (botChoice === "s" && userChoice === 'p'){
+    }
+    if (botChoice === "s" && userChoice === 'p'){
      lose(userChoice, botChoice);
-}
+    }
 }
 
 
 function main() { 
 rock.addEventListener('click', function () {
     game("r");
-});
+    });
 
 paper.addEventListener('click', function () {
     game("p");
-});
+    });
 
 scissor.addEventListener('click', function () {
     game("s");
-});
+    });
 }
 
 main ();
