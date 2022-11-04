@@ -1,108 +1,115 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper Scissor Game.
 
-Welcome Mustafanaji0413,
+The perfect Rock, Paper Scissor Game is a fun and interactive game, its perfect for playing with friends, family and even yourself! When playing with people you hold dear and have spent alot of time geeting to know, the odds of knowing your their next move becomes higher. That why we have the function of playing against the computer! The computer selects a random option making a win, much more difficult! 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The user of the game will learn how the game works, the rules and how to explain it to others! The perfect Rock, Paper Scissor Game is targeted to children and adults!
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<img width="800" alt="readme-life-hacks" src="https://user-images.githubusercontent.com/115544231/197305674-3feb1f78-8456-4b54-95be-360fe80f74cf.png">
 
-## Gitpod Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Existing Features
+- Header 
+- - On the top of the page we can see the name of the game with a background and font that are playfull and contrasts the rest of the page
+- - The header clearly says what game the user is about to play. 
 
-`python3 -m http.server`
+<img width="800" alt="Screenshot 2022-10-22 at 01 57 53" src="https://user-images.githubusercontent.com/115544231/197306405-a975ba92-8f90-470e-ad91-8943aefa1c49.png">
 
-A blue button should appear to click: _Make Public_,
+ - The Game Options
 
-Another blue button should appear to click: _Open Browser_.
+- - The game options clearly instructs the player to make a move. 
+- - The user can see clear instructions on the moves he/she can make in form of three diffrent pictures showing rock, paper and scissor. 
+- - The user can simply press on one of the images to make their move. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<img width="800" alt="Screenshot 2022-10-22 at 01 58 52" src="https://user-images.githubusercontent.com/115544231/197306450-bcc763df-6d0d-4d16-b248-8fafa36ed010.png">
 
-A blue button should appear to click: _Make Public_,
+- The Game Results
 
-Another blue button should appear to click: _Open Browser_.
+- - When the user decides what move to make, their choice displays as the first word.
+- - The computer uses the java code to chose a random option. The option the bot choose it then displayed as the third word. 
+- - When both the user and the computer has made their move, the score is updated and the winner is prsented in the form of text!
+- - The winner and score are clear for the user to see which makes he game easy to understan and play.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<img width="800" alt="Screenshot 2022-10-22 at 01 55 53" src="https://user-images.githubusercontent.com/115544231/197306301-f4e8a677-143b-4357-a0d7-276fccfeb758.png">
 
-To log into the Heroku toolbelt CLI:
+### The Hacks Section
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- The hacks section provides the user with the websites entire life hacks tips.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- The hacks are divided into three hack images per row (on a desktop) to keep things visially pleasing.
 
-------
+- Under each hack image there is a text box explaning how the hack works. 
 
-## Release History
+- Every time the page moves on to a diffrent hacks catagory the page displays a healine showing the catagory of the upcomning hacks. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<img width="800" alt="Screenshot 2022-10-22 at 01 53 25" src="https://user-images.githubusercontent.com/115544231/197306157-7154a884-cd0b-48ed-a18b-4aade4fdad05.png">
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### The Footer
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- The footer contains social media links to out Facebook, Twitter, Youtube and Instagram.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- The links are shown as icons.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- If the user presses on a link it opens on in a new tab. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+<img width="800" alt="Screenshot 2022-10-22 at 01 59 56" src="https://user-images.githubusercontent.com/115544231/197306497-6e1cb420-8602-4f43-9b24-e6334059363b.png">
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Testing 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- I have tested that this page works in diffrnet browsers such as Chrome, Safari and Firefox.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- I have cofirmed that thus proejct is responsive, looks goof and functoins on all standard screen sizes using dev tools bar. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- I have confirmed that the header, navigation, get in touch, hack and home are all readeble and understandeble. 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- I have confirmed that the form works and the required fileds need to be filled out for the form to be able to submit. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Bugs
 
-------
+**Solved Bugs**
+- When I started out with the hacks page I couldnt figure out how to align the diffrent images without them jumping all over the website. I discovered that the "float" tag was ruining it. After getting help from tutor support I learned about "flex" and that helped me solve the issue. 
 
-## FAQ about the uptime script
+- Once the desktop alignment was good i had trouble with aligning the page for diffrent devices. Once I fully understood the "flex" attribut it helped me solve it. 
 
-**Why have you added this script?**
+- I had difficulties with the hacks page becouse of the images were diffrent sizings. I solved this by using adobe tool to make them all the same size. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- I struggled with making the text box on the home page transparrnet. I used the "rgba" to set the color because it can also set the transparency of it.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Validator Testing 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+ **HTML**
+- No errors were returned when passing through the official W3C validator. 
 
-**So….?**
+**CSS**
+- No errors were found when passing through the official Jigsaw validator. 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+**Accessibility**
+- I have confirmed that the colors and fonts chosen are easy to read and accessible by running it through the lighthouse in devtools.
 
-**Can I opt out?**
+<img width="800" alt="Screenshot 2022-10-22 at 02 24 08" src="https://user-images.githubusercontent.com/115544231/197307937-9981b80d-b20e-43d6-a3da-e18079306326.png">
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Unfixed Bugs
+- No unfixed bugs
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Deployment 
+- The site was deployed on to GitHub Pages. The steps are as follows:
+- In the GitHub repository go to the setting tab
+- Go to the pages tab on the right
+- Navigate to the branches section an press the none drop-down menu
+- Select the "Main" option
+- Press save and a link is giving to me to complete the website. 
 
-**Anything more?**
+The live link can be found here. <a href="https://mustafanaji0413.github.io/life-hack/index.html">Life Hacks</a>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Credits
+**Content**
+- The code to make the social media links was taken from the Love Running Project.
+- The code used to to align the images was inspired from tutor support, W3 Schools and Stack Overflow. 
 
----
-
-Happy coding!
+**Media** 
+The image for the header was taken from <a href="https://www.istockphoto.com/photo/life-hacks-text-on-a-display-on-blue-and-pink-bright-background-gm895791500-247456759?phrase=life%20hacks"> IStock</a> <a href="https://www.lifehack.org/articles/lifestyle/100-life-hacks-that-make-life-easier.html">Lifehack.org</a>, <a href="https://chasingabetterlife.com/27-bedroom-organization-hacks-thatll-make-look-like-genius/">Chasing better life</a> and <a href="https://www.eatthis.com/kitchen-hacks-cooking-tips/">Eat this</a>
