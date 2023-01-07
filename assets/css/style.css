@@ -96,3 +96,38 @@ footer{
 #footer-h2 {
     margin-top: 10px;
 }
+
+.hide {
+    display: none;
+    width: 200px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: 6.5%;
+    margin-bottom: 10px;
+}
+      
+.myDIV:hover + .hide {
+    display: block;
+    color: #000000;
+    background-color: aqua;
+    border: 50%;
+    margin-bottom: 10px;
+}
+
+#rules {
+    width: 80px;
+    text-align: center;
+    border-radius: 50px;
+    background: aqua;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+.myDIV{
+    width: 120px;
+    text-align: center;
+    border-radius: 50px;
+    background: aqua;
+    margin-left: 9%;
+    margin-bottom: 10px;
+}

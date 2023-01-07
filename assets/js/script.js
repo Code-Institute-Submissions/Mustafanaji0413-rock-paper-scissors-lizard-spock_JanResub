@@ -7,7 +7,6 @@ const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
 const myScore = document.getElementById("my-score");
 
-
 function getbotChoice () {
     const choices = ['r', 'p', 's'];
     const randomNumber = Math.floor(Math.random()*3);
@@ -81,3 +80,4 @@ scissor.addEventListener('click', function () {
 }
 
 main ();
+
