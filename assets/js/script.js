@@ -6,6 +6,14 @@ const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
 const myScore = document.getElementById("my-score");
+const intro = document.querySelector(".intro"); 
+const play_screen = document.querySelectorAll(".play_screen"); //select the element
+const button1 = document.querySelector('#button1');
+
+button1.onclick = () => {
+    intro.style.display = 'none';
+    play_screen.forEach(div => div.style.display = 'block');
+  };
 
 function getbotChoice () {
     const choices = ['r', 'p', 's'];
