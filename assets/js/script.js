@@ -10,7 +10,7 @@ const intro = document.querySelector(".intro");
 const play_screen = document.querySelectorAll(".play_screen");
 const button1 = document.querySelector('#button1');
 
-// Lets play intro page button
+// "Lets play" intro page button
 
 button1.onclick = () => {
     intro.style.display = 'none';
@@ -31,7 +31,7 @@ function makeWord (letter) {
     if (letter === "p") return "Paper";
 }
 
-  // If user wins
+  // If user wins add to the score and show a message that he/she won
 function win(userChoice, botChoice) {
     userScore++;
     userPoint.innerHTML = userScore;
@@ -40,21 +40,21 @@ function win(userChoice, botChoice) {
 
 } 
 
-  // If user lost
+ // If user loose lost add to bot score and show a message that he/she lost
 function lose (userChoice, botChoice) {
     botScore++;
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
     myScore.innerHTML = `<p> ${ makeWord(userChoice)} Loses To ${makeWord (botChoice)}. You Lost...😭 </p>`;
 }
-  // If its a draw
+  // If its a draw show message that it is a draw. 
 function draw (userChoice, botChoice) {
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
     myScore.innerHTML = `<p> ${ makeWord(userChoice)} Equals ${makeWord (botChoice)}. It's A Draw.😐</p>`;
 }
 
-  // Check who wins the round based on choices 
+  // Check if bot or user wins the round based on the choices they made
 function game(userChoice) {
     const botChoice = getbotChoice();
 
@@ -81,7 +81,7 @@ function game(userChoice) {
     }
 }
 
-  // Check what the choice is
+  // Check what choice the user made
 function main() { 
 rock.addEventListener('click', function () {
     game("r");

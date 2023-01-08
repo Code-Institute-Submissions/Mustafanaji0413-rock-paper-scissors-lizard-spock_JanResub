@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Header */
 header {
     background: #8b8b00;
 }
@@ -30,7 +30,7 @@ header > h1 {
     position: relative;
 }
 
-/* Player in scoreboard */
+/* Player  and bot text in scoreboard */
 .player {
     background-color: #0000FF;
     font-size: 14px;
