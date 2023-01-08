@@ -10,11 +10,15 @@ const intro = document.querySelector(".intro");
 const play_screen = document.querySelectorAll(".play_screen");
 const button1 = document.querySelector('#button1');
 
+// Lets play intro page button
+
 button1.onclick = () => {
     intro.style.display = 'none';
     play_screen.forEach(div => div.style.display = 'block');
   };
 
+
+  // Generate random computer choice 
 function getbotChoice () {
     const choices = ['r', 'p', 's'];
     const randomNumber = Math.floor(Math.random()*3);
@@ -27,7 +31,7 @@ function makeWord (letter) {
     if (letter === "p") return "Paper";
 }
 
-
+  // If user wins
 function win(userChoice, botChoice) {
     userScore++;
     userPoint.innerHTML = userScore;
@@ -35,18 +39,22 @@ function win(userChoice, botChoice) {
     myScore.innerHTML = `<p> ${ makeWord(userChoice)} Beats ${makeWord (botChoice)}. You win!🔥</p>`;
 
 } 
+
+  // If user lost
 function lose (userChoice, botChoice) {
     botScore++;
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
     myScore.innerHTML = `<p> ${ makeWord(userChoice)} Loses To ${makeWord (botChoice)}. You Lost...😭 </p>`;
 }
+  // If its a draw
 function draw (userChoice, botChoice) {
     userPoint.innerHTML = userScore;
     botPoint.innerHTML = botScore;
     myScore.innerHTML = `<p> ${ makeWord(userChoice)} Equals ${makeWord (botChoice)}. It's A Draw.😐</p>`;
 }
 
+  // Check who wins the round based on choices 
 function game(userChoice) {
     const botChoice = getbotChoice();
 
@@ -73,7 +81,7 @@ function game(userChoice) {
     }
 }
 
-
+  // Check what the choice is
 function main() { 
 rock.addEventListener('click', function () {
     game("r");
