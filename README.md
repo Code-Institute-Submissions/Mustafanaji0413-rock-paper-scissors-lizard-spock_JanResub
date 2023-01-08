@@ -80,5 +80,7 @@ Live link can be found here -  <a href="https://mustafanaji0413.github.io/rock-p
 ### Content 
 - The code to show the whole number instead of decimal numbers was taken from the Love Maths project. 
 
+- The innovation and some of the code has been been inspired from <a href="https://www.youtube.com/watch?v=jaVNP3nIAv0">WHATSDEV</a>
+
 ### Media
 - The images for the 3d rendered hands were taken from <a href="https://www.flaticon.com/">FlatIcon</a>

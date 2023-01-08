@@ -7,7 +7,7 @@ const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
 const myScore = document.getElementById("my-score");
 const intro = document.querySelector(".intro"); 
-const play_screen = document.querySelectorAll(".play_screen"); //select the element
+const play_screen = document.querySelectorAll(".play_screen");
 const button1 = document.querySelector('#button1');
 
 button1.onclick = () => {
@@ -49,6 +49,7 @@ function draw (userChoice, botChoice) {
 
 function game(userChoice) {
     const botChoice = getbotChoice();
+
     if (botChoice === userChoice) {
     draw(userChoice, botChoice); 
     }

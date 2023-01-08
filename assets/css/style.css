@@ -16,6 +16,8 @@ header > h1 {
     font-family: cairo, sans-serif;
 }
 
+/* Score board */
+
 .leaderboard {
     border: 3px solid white;
     width: 200px;
@@ -28,6 +30,7 @@ header > h1 {
     position: relative;
 }
 
+/* Player in scoreboard */
 .player {
     background-color: #0000FF;
     font-size: 14px;
@@ -47,20 +50,28 @@ header > h1 {
     left: 175px;
 } 
 
+/* Score Numbers */
+
 .score {
     font-family: cairo, sans-serif;
     font-size: 40px;
     color: white;
 }
 
+/* Score Text */
+
 .score > p {
     text-align: center;
     font-weight: 700;
 }
 
+/* Background Color */
+
 body {
     background-color: #00468b;
 }
+
+/* Rock, paper, scissor images */
 
 .options {
     text-align: center;
@@ -76,6 +87,8 @@ body {
     cursor: pointer;
 }
 
+/* Take action text */
+
 #ta {
     text-align: center;
     color: white;
@@ -84,20 +97,7 @@ body {
     font-size: 30px;
 }
 
-footer{
-    border: 4px solid black;
-    color: white;
-    text-align: center;
-    margin-top: 110px;
-    background-color: black; 
-    height: 120px;
-    font-family: cairo, sans-serif;
-}
-
-#footer-h2 {
-    margin-top: 10px;
-}
-
+/* Rules text */
 .hide {
     display: none;
     width: 200px;
@@ -132,6 +132,8 @@ footer{
     margin-left: 9%;
     margin-bottom: 10px;
 }
+
+/* Intro page */
 
 .intro {
     color: rgb(238, 238, 238);
