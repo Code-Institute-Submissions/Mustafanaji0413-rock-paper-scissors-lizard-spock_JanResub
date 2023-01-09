@@ -100,11 +100,11 @@ body {
 /* Rules text */
 .hide {
     display: none;
-    width: 200px;
+    width: 220px;
     text-align: center;
     border-radius: 50px;
-    margin-left: 6.5%;
-    margin-bottom: 10px;
+    margin-left: 13%;
+    margin-bottom: 20px;
 }
       
 .myDIV:hover + .hide {
@@ -120,7 +120,8 @@ body {
     text-align: center;
     border-radius: 50px;
     background: aqua;
-    margin-left: 10%;
+    color: #000000;
+    margin-left: 17%;
     margin-bottom: 10px;
 }
 
@@ -129,7 +130,8 @@ body {
     text-align: center;
     border-radius: 50px;
     background: aqua;
-    margin-left: 9%;
+    color: #000000;
+    margin-left: 16%;
     margin-bottom: 10px;
 }
 

@@ -17,7 +17,6 @@ const button1 = document.querySelector('#button1');
 button1.onclick = () => {
     intro.style.display = 'none';
     play_screen.forEach(div => div.style.display = 'block');
-
 };
 
 // Generate random computer choice 
