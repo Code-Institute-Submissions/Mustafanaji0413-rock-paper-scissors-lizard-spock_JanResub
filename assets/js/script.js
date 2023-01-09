@@ -68,13 +68,7 @@ function game(userChoice) {
     if (botChoice === "r" && userChoice === 'p'){
       win(userChoice, botChoice);
     }
-    if (botChoice === "l" && userChoice === 'r'){
-      win(userChoice, botChoice);
-     }
     if (botChoice === "s" && userChoice === 'p'){
-      lose(userChoice, botChoice);
-    }
-    if (botChoice === "k" && userChoice === 'r'){
       lose(userChoice, botChoice);
     }
     if (botChoice === "l" && userChoice === 'p'){
@@ -83,6 +77,18 @@ function game(userChoice) {
     if (botChoice === "k" && userChoice === 'p'){
       win(userChoice, botChoice);
     }
+    if (botChoice === "s" && userChoice === 'r'){
+      lose(userChoice, botChoice);
+     }
+    if (botChoice === "l" && userChoice === 'r'){
+      win(userChoice, botChoice);
+     }
+    if (botChoice === "k" && userChoice === 'r'){
+      lose(userChoice, botChoice);
+    }
+    if (botChoice === "p" && userChoice === 'r'){
+      lose(userChoice, botChoice);
+     }
     if (botChoice === "l" && userChoice === 's'){
       win(userChoice, botChoice);
     }
@@ -95,12 +101,8 @@ function game(userChoice) {
     if (botChoice === "r" && userChoice === 's'){
      lose(userChoice, botChoice);
     }
-    if (botChoice === "p" && userChoice === 'r'){
-     lose(userChoice, botChoice);
-    }
-    if (botChoice === "s" && userChoice === 'p'){
-     lose(userChoice, botChoice);
-    }
+
+
     
 }
 
