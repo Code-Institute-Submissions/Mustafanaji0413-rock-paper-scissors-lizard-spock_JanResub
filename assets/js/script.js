@@ -5,6 +5,8 @@ const botPoint = document.getElementById("bot-point");
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
+const lizard = document.getElementById("lizard");
+const spock = document.getElementById("spock");
 const myScore = document.getElementById("my-score");
 const intro = document.querySelector(".intro"); 
 const play_screen = document.querySelectorAll(".play_screen");
@@ -15,13 +17,13 @@ const button1 = document.querySelector('#button1');
 button1.onclick = () => {
     intro.style.display = 'none';
     play_screen.forEach(div => div.style.display = 'block');
+  
   };
-
 
   // Generate random computer choice 
 function getbotChoice () {
-    const choices = ['r', 'p', 's'];
-    const randomNumber = Math.floor(Math.random()*3);
+    const choices = ['r', 'p', 's', 'l', 'k', ''];
+    const randomNumber = Math.floor(Math.random()*5);
     return choices [randomNumber];
 }
 
@@ -29,6 +31,8 @@ function makeWord (letter) {
     if (letter === "r") return "Rock";
     if (letter === "s") return "Scissor";
     if (letter === "p") return "Paper";
+    if (letter === "l") return "Lizard";
+    if (letter === "k") return "Spock";
 }
 
   // If user wins add to the score and show a message that he/she won
@@ -62,10 +66,28 @@ function game(userChoice) {
     draw(userChoice, botChoice); 
     }
     if (botChoice === "r" && userChoice === 'p'){
-     win(userChoice, botChoice);
+      win(userChoice, botChoice);
     }
-    if (botChoice === "s" && userChoice === 'r'){
-     win(userChoice, botChoice);
+    if (botChoice === "l" && userChoice === 'r'){
+      win(userChoice, botChoice);
+     }
+    if (botChoice === "s" && userChoice === 'p'){
+      lose(userChoice, botChoice);
+    }
+    if (botChoice === "k" && userChoice === 'r'){
+      lose(userChoice, botChoice);
+    }
+    if (botChoice === "l" && userChoice === 'p'){
+      lose(userChoice, botChoice);
+    }
+    if (botChoice === "k" && userChoice === 'p'){
+      win(userChoice, botChoice);
+    }
+    if (botChoice === "l" && userChoice === 's'){
+      win(userChoice, botChoice);
+    }
+    if (botChoice === "k" && userChoice === 's'){
+      lose(userChoice, botChoice);
     }
     if (botChoice === "p" && userChoice === 's'){
      win(userChoice, botChoice);
@@ -79,6 +101,7 @@ function game(userChoice) {
     if (botChoice === "s" && userChoice === 'p'){
      lose(userChoice, botChoice);
     }
+    
 }
 
   // Check what choice the user made
@@ -93,6 +116,14 @@ paper.addEventListener('click', function () {
 
 scissor.addEventListener('click', function () {
     game("s");
+    });
+
+lizard.addEventListener('click', function () {
+    game("l");
+    });
+  
+spock.addEventListener('click', function () {
+    game("k");
     });
 }
 
