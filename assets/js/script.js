@@ -1,3 +1,5 @@
+/* Some of the code has been inspired from https://youtu.be/jaVNP3nIAv0 */ 
+
 let userScore = 0;
 let botScore = 0;
 const userPoint = document.getElementById("user-point");

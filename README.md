@@ -1,15 +1,21 @@
 # Rock, Paper Scissor Game.
 
-The perfect Rock, Paper Scissor Game is a fun and interactive game, it's perfect for playing with friends, family, and even yourself! When playing with people you hold dear and have spent a lot of time getting to know, the odds of knowing your next move becomes higher. That is why we have the function of playing against the computer! The computer selects a random option making a win, much more difficult! 
+The perfect Rock, Paper, Scissor Lizard Spock Game is a fun and interactive game, it's perfect for playing with friends, family, and even yourself! When playing with people you hold dear and have spent a lot of time getting to know, the odds of knowing your next move becomes higher. That is why we have the function of playing against the computer! The computer selects a random option making a win, much more difficult! 
 
-The user of the game will learn how the game works, the rules, and how to explain it to others! The perfect Rock, Paper Scissor Game is targeted at children and adults!
+The user of the game will learn how the game works once he opens up the website and hovers over the rules header, and how to explain it to others! The perfect Rock, Paper Scissor Lizard Spock Game is targeted at children and adults!
 
-<img width="800" alt="Screenshot 2022-11-04 at 19 00 39" src="https://user-images.githubusercontent.com/115544231/200068450-e89c9ec2-d544-41a9-9e7d-35b73807bec5.png">
+<img width="800" alt="Screenshot 2023-01-09 at 18 35 35" src="https://user-images.githubusercontent.com/115544231/211371527-18af11af-7161-481b-a61c-62af3c839c69.png">
 
 
 ## Features
 
 ### Existing Features
+- Intro Page
+
+- - When the user first visits the page they are welcomed by a Intro page that reads the name of the game along with rules to explain how it works. The user can then press the button "Let's Play" and be introduced to the main playing page.
+
+<img width="800" alt="Screenshot 2023-01-09 at 18 39 06" src="https://user-images.githubusercontent.com/115544231/211371921-7e589663-f7c7-4b81-a52e-daf8a14729c6.png">
+
 - Header 
 - - On the top of the page we can see the name of the game with a background and font that are playful and contrasts the rest of the page
 - - The header clearly says what game the user is about to play. 
@@ -19,10 +25,10 @@ The user of the game will learn how the game works, the rules, and how to explai
  - The Game Options
 
 - - The game options clearly instruct the player to make a move. 
-- - The user can see clear instructions on the moves he/she can make in form of three different pictures showing rock, paper, and scissors. 
-- - The user can simply press on one of the images to make their move. 
+- - The user can see clear instructions on the moves he/she can make in form of five different pictures showing rock, paper, scissors, lizard and a spock. 
+- - The user can simply press on one of the Images to make their move. 
 
-<img width="800" alt="Screenshot 2022-11-04 at 21 26 11" src="https://user-images.githubusercontent.com/115544231/200068677-93ed0a2b-8db5-4254-b42a-79859e1b1dcd.png">
+<img width="800" alt="Screenshot 2023-01-09 at 18 37 42" src="https://user-images.githubusercontent.com/115544231/211371700-c8e48fc3-230d-422f-88d9-bd4858b0fb4f.png">
 
 
 - The Game Results
@@ -32,17 +38,10 @@ The user of the game will learn how the game works, the rules, and how to explai
 - - When both the user and the computer have made their move, the score is updated and the winner is presented in the form of text!
 - - The winner and score are clear for the user to see which makes the game easy to understand and play.
 
-<img width="800" alt="Screenshot 2022-11-04 at 21 31 30" src="https://user-images.githubusercontent.com/115544231/200068808-3f444192-5a67-4f67-9a30-b9f11ca9812e.png">
-
-- The Footer
-- - The footer shows the rules of the game. 
-- - The Footer is very helpful to the user that has never played the game before or has forgotten the rules. 
-
-<img width="800" alt="Screenshot 2022-11-04 at 21 26 32" src="https://user-images.githubusercontent.com/115544231/200068934-4a321140-7178-4b1a-9c58-631d6e71f187.png">
+<img width="800" alt="Screenshot 2023-01-09 at 18 35 35" src="https://user-images.githubusercontent.com/115544231/211371527-18af11af-7161-481b-a61c-62af3c839c69.png">
 
 ### Features Left To Implement 
 - I would like to have the possibility to play to a certain amount of points before the game ends. 
-- I would also like to add the Lizard and Spock options in the future. 
 
 
 ## Testing 
@@ -54,7 +53,7 @@ The user of the game will learn how the game works, the rules, and how to explai
 
 - I have confirmed that the color and fonts are all easy to read and accessible by running them through lighthouse in dev tools. 
 
-<img width="800" alt="Screenshot 2022-11-04 at 21 27 35" src="https://user-images.githubusercontent.com/115544231/200069065-20dfcbe9-4c0e-4637-b4fb-3e887227bf28.png">
+<img width="800" alt="Screenshot 2023-01-09 at 18 47 47" src="https://user-images.githubusercontent.com/115544231/211373621-27d07fb3-c80b-4977-93ba-f22e596ca26a.png">
 
 
 ## Bugs 
